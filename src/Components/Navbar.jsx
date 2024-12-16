@@ -3,7 +3,7 @@ import { useState } from "react";
 import { MdOutlineClose } from "react-icons/md";
 import { IoMdMenu } from "react-icons/io";
 import { itemVariants, sideVariants } from "../Utils/Motion";
-import Logo from '../assets/Logo (2).png'
+import Logo from '../assets/Desight Foundation (2).png'
 import { Link } from "react-router-dom";
 
 const Navbar = () => {
@@ -25,7 +25,7 @@ const Navbar = () => {
       <div className="nav-container flex justify-between w-[75%] mx-auto">
         <div className="flex items-center">
         
-          <h1 className="text-3xl  font">Desight Foundation</h1>
+          <img src={Logo} className="h-[13vh] mt-[-2vh] mb-[-1vh]"  />
         </div>
      
          <ul className="hidden md:flex items-center space-x-8">

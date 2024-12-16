@@ -9,10 +9,14 @@
     color: rgb(2, 2, 77);
     margin-left: -1vw;
 }
-.under{
-    
+.dash{
+  border-radius: 35px;
+  width: 370px;
+  margin-left: 190px;
+  margin-top: -21px;
+  margin-bottom: 40px;
+  border: 5px #2980b9 solid;
 }
-
 
 .fonts{
     font-family: Geneva, Tahoma, ;
@@ -23,7 +27,42 @@
 }
 
 
-
+.about-container {
+    background-color: #f9f9f9;
+    color: #333;
+    padding: 20px;
+    padding-top: 20px;
+    border-radius: 8px;
+    max-width: 800px;
+    margin: 20px auto;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .about-title {
+    font-size: 2.5em;
+    color: #2c3e50;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .about-subtitle {
+    font-size: 1.8em;
+    color: #2980b9;
+    margin-top: 20px;
+  }
+  
+  .about-description {
+    font-size: 1.1em;
+    line-height: 1.6;
+    margin: 10px 0;
+  }
+  
+  .about-values {
+    list-style-type: disc;
+    margin-left: 20px;
+    line-height: 1.6;
+  }
 
 
 
