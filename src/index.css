@@ -1,3 +1,49 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+.font{
+    font-family: Geneva, Tahoma, ;
+    font-weight: 540;
+    color: rgb(2, 2, 77);
+    margin-left: -1vw;
+}
+.under{
+    
+}
+
+
+.fonts{
+    font-family: Geneva, Tahoma, ;
+    font-weight: 500;
+    color: rgb(2, 2, 77);
+    margin-left: -1vw;
+    width: 200px;
+}
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 800px) {
+    .nav-full{
+        display:none;
+    }
+}
+
+
+@media screen and (min-width: 801px) and (max-width: 1200px) {
+
+    .nav-full > div {
+        width: 90%;
+    }
+
+    .nav-full > div > ul {
+        margin-top: .5rem;
+    } 
+}
