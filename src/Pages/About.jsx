@@ -1,4 +1,5 @@
 import React from 'react'
+import { Button } from '../Ui/Button'
 import { Link } from 'react-router-dom'
 const About = () => {
   return (
@@ -55,7 +56,7 @@ const About = () => {
       <p className="about-description">
         Join us in our mission to make a difference. Whether through volunteering, donations, or spreading awareness, your support can help us reach more people in need.
       </p><Link to={'/enroll'}>
-      <button className=''>Get involved</button></Link>
+      <Button size='lg' className='gradient-bg text-white hover:opacity-90 transition-opacity'>Get involved</Button></Link>
     </div>
   )
 }

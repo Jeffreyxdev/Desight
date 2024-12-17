@@ -5,7 +5,7 @@ import { IoMdMenu } from "react-icons/io";
 import { itemVariants, sideVariants } from "../Utils/Motion";
 import Logo from '../assets/Desight Foundation (2).png'
 import { Link } from "react-router-dom";
-
+import { Button } from '../Ui/Button'
 const Navbar = () => {
   const controls=useAnimation();
 
@@ -49,7 +49,7 @@ const Navbar = () => {
        <nav className="md:hidden flex justify-center fixed z-10 w-[90vw] h-[15vh] ">
         <div className="nav-container pt-5 flex justify-between w-[90%]">
             <div className="">
-            <h1 className="text-3xl  fonts">Desight Foundation</h1>
+            <img src={Logo} className="h-[13vh] mt-[-2vh] mb-[-1vh]"  />
             </div>
 
             {/* Mobile menu button (hamburger) */}
@@ -95,12 +95,12 @@ const Navbar = () => {
            <motion.li variants={itemVariants} className="mb-6">Outreachs</motion.li>
           </ul>
           <Link to={'/login'}>
-          <motion.button
+          <motion.Button
             variants={itemVariants}
             className="w-[150px] h-[48px] bg-gradient-to-r from-blue-600 to-blue-900 text-white rounded-xl text-[14px] mt-4 mr-[-2.8em]"
           >
             Get Involved
-          </motion.button></Link>
+          </motion.Button></Link>
          
         </motion.div>
         </motion.aside>
