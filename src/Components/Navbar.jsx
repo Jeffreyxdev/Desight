@@ -22,13 +22,13 @@ const Navbar = () => {
     <>
     {/*Desktop view*/}
     <nav className=" nav-full w-full fixed top-0 left-0 right-0 bg-white border-b border-gray-200 z-50 ">
-      <div className="nav-container flex justify-between w-[75%] mx-auto">
+      <div className="nav-container flex justify-between w-[75%] mx-auto ">
         <div className="flex items-center">
-        
-          <img src={Logo} className="h-[13vh] mt-[-2vh] mb-[-1vh]"  />
+        <Link to={'/'}>
+          <img src={Logo} className="h-[13vh] mt-[-2vh] mb-[-1vh] "  /></Link>
         </div>
      
-         <ul className="hidden md:flex items-center space-x-8">
+         <ul className="hidden md:flex items-center space-x-5">
           
        <Link to={'/'}  className="text-gray-700 hover:text-gray-900 "> <li></li></Link>
         <Link to={'/goals'}  className="text-gray-700 hover:text-gray-900"><li>Goals</li></Link>
@@ -37,7 +37,15 @@ const Navbar = () => {
         <Link to={'/about'}  className="text-gray-700 hover:text-gray-900"> <li>About us</li></Link>
        <Link to={'/contact'}  className="text-gray-700 hover:text-gray-900"> <li>Contact us</li></Link>
       </ul>
+      <Button size={"sm"}
       
+      className="h-9 mt-4 btn gradient-bg"><Link to={'/donate'}>
+       <motion.button 
+        onHoverStart={handleHover}
+        onHoverEnd={()=> controls.start({x:0})}
+        animate={controls}
+         
+        >Donate</motion.button></Link></Button>
       </div>
     </nav>
 
@@ -46,10 +54,11 @@ const Navbar = () => {
        {/* Mobile Navbar */}
       
     
-       <nav className="md:hidden flex justify-center fixed z-10 w-[90vw] h-[15vh] ">
-        <div className="nav-container pt-5 flex justify-between w-[90%]">
-            <div className="">
-            <img src={Logo} className="h-[13vh] mt-[-2vh] mb-[-1vh]"  />
+       <nav className="md:hidden flex justify-center fixed  w-[110%] h-[10vh] p-2 mt-[-2.3vh] bg-white border-b border-gray-200 z-50 ">
+        <div className="nav-container pt-5 flex justify-between  nav-container h-3 mr-10 bg-white">
+            <div className="mr-20">
+              <Link to={'/'}>
+            <img src={Logo} className="h-[12vh] mt-[-3.5vh] mb-[-5vh] p-2 logo"  /></Link>
             </div>
 
             {/* Mobile menu button (hamburger) */}
@@ -58,10 +67,10 @@ const Navbar = () => {
             
             >
               {isMobileMenuOpen ? (
-                <MdOutlineClose  className="w-[50px] h-[45px] p-2 cursor-pointer"/>
+                <MdOutlineClose  className="w-[50px] h-[45px] p-2 mt-[-3vh] cursor-pointer"/>
               ) : (
                 <div className=" flex justify-center items-center h-[100%] pb-9">
-                 <IoMdMenu className="w-[60px] h-[60px] p-2 cursor-pointer "/>
+                 <IoMdMenu className="w-[60px] h-[56px] p-2 mt-5 cursor-pointer "/>
                 </div>
               )}
             </div>
@@ -94,10 +103,10 @@ const Navbar = () => {
             <motion.li variants={itemVariants} className="mb-6"><Link to={'/contact'}>Contact us</Link></motion.li>
            <motion.li variants={itemVariants} className="mb-6">Outreachs</motion.li>
           </ul>
-          <Link to={'/login'}>
+          <Link to={'/enroll'}>
           <motion.Button
             variants={itemVariants}
-            className="w-[150px] h-[48px] bg-gradient-to-r from-blue-600 to-blue-900 text-white rounded-xl text-[14px] mt-4 mr-[-2.8em]"
+            className="w-[150px] h-[48px] bg-gradient-to-r from-blue-600 to-blue-900 text-white rounded-xl text-[14px] mt-[-2vh] mr-[-2.8em]"
           >
             Get Involved
           </motion.Button></Link>

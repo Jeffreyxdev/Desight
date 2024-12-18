@@ -5,7 +5,7 @@ const About = () => {
   return (
    
       <div className="about-container ">
-      <h1 className="about-title mt-3">About Desight Foundation</h1>
+      <h1 className="about-title mt-7">About Desight Foundation</h1>
       <div className='dash'></div>
       <p className="about-description">
         At Desight Foundation, we are dedicated to improving the health and well-being of communities through innovative medical solutions and compassionate care. Our mission is to provide accessible healthcare services and support to those in need.

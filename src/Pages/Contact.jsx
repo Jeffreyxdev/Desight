@@ -1,6 +1,12 @@
 // src/ContactPage.js
 import React, { useState } from 'react';
-
+export const metadata = {
+  title: "Let's Connect and Make Things Happen | Desight Foundation",
+  description: "Need help or have questions? Our friendly team is here to provide exceptional service and support. Contact us for assistance. Let's connect and achieve together.",
+  alternates: {
+      canonical: 'https://www.desightfoundation.com.ng/contact'
+    }
+}
 const Contact = () => {
   const [formData, setFormData] = useState({
     name: '',
