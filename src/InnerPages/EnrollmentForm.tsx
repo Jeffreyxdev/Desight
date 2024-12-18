@@ -4,6 +4,13 @@ import { Button } from '../Ui/Button';
 import { Input } from '../Ui/input';
 import { Label } from '../Ui/label';
 import { Textarea } from '../Ui/textarea';
+import {
+  Select,
+  SelectContent,
+  SelectItem,
+  SelectTrigger,
+  SelectValue,
+} from '../Ui/select'
 
 const EnrollmentForm = () => {
   
