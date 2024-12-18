@@ -159,7 +159,14 @@
     margin: 3rem 0 7rem 0;
     padding: 0 5rem;
   }
-
+  .dash1{
+    border-radius: 35px;
+    width: 190px;
+    
+  
+    
+    border: 3px #2980b9 solid;
+  }
 .dash{
 border-radius: 35px;
 width: 370px;

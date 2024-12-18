@@ -1,5 +1,6 @@
 import React from 'react'
 import { Button } from '../Ui/Button'
+import { FaRegEye } from "react-icons/fa";
 import { Link } from 'react-router-dom'
 const About = () => {
   return (
@@ -10,7 +11,8 @@ const About = () => {
       <p className="about-description">
         At Desight Foundation, we are dedicated to improving the health and well-being of communities through innovative medical solutions and compassionate care. Our mission is to provide accessible healthcare services and support to those in need.
       </p>
-      <h2 className="about-subtitle">Our Vision</h2>
+     <h2 className="about-subtitle ">Our Vision <FaRegEye className='ml-[10vw] mt-[-5vh]' /></h2>
+     <p className='dash1'/>
       <p className="about-description">
         We envision a world where everyone has access to quality healthcare, regardless of their background or circumstances. We strive to empower individuals through education, resources, and support.
       </p>
@@ -21,10 +23,7 @@ const About = () => {
         <li>Innovation</li>
         <li>Collaboration</li>
       </ul>
-      <h2 className="about-subtitle">Why Africa?</h2>
-      <p className="about-description">
-      Africa bears a disproportionate burden of visual impairment, with 43% of global blindness cases. Our focus on Africa addresses this disparity.
-      </p>
+     
       <h2 className="about-subtitle">Objectives</h2>
       <ul className="about-values">
         <li>Conduct bi-annual eye care outreaches in rural and underserved communities.</li>
