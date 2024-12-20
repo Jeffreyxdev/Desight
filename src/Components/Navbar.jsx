@@ -30,10 +30,10 @@ const Navbar = () => {
      
          <ul className="hidden md:flex items-center space-x-5">
           
-       <Link to={'/'}  className="text-gray-700 hover:text-gray-900 "> <li></li></Link>
+       <Link to={'/'}  className="text-gray-700 hover:text-gray-900 "> <li>Home</li></Link>
         <Link to={'/goals'}  className="text-gray-700 hover:text-gray-900"><li>Goals</li></Link>
       
-       <Link to={'/programs'}  className="text-gray-700 hover:text-gray-900 "><li>Outreachs</li></Link>
+       <Link to={'/programs'}  className="text-gray-700 hover:text-gray-900 "><li>Programs</li></Link>
         <Link to={'/about'}  className="text-gray-700 hover:text-gray-900"> <li>About us</li></Link>
        <Link to={'/contact'}  className="text-gray-700 hover:text-gray-900"> <li>Contact us</li></Link>
       </ul>

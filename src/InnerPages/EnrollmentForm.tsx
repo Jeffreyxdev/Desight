@@ -11,6 +11,13 @@ import {
   SelectTrigger,
   SelectValue,
 } from '../Ui/select'
+export const metadata = {
+  title: 'Desight Foundation| enrollment',
+  description: "Become parnters with us",
+  alternates: {
+    canonical: 'https://desightfoundation.com.ng/enroll'
+  }
+}
 
 const EnrollmentForm = () => {
   
@@ -36,6 +43,7 @@ const EnrollmentForm = () => {
         <div className="space-y-4">
           <div>
             <Label htmlFor="orgName">Organization Name</Label>
+         
             <Input
               id="orgName"
               placeholder="Enter your organization's name"
@@ -53,6 +61,7 @@ const EnrollmentForm = () => {
               <SelectContent>
                 <SelectItem value="hospital">Hospital</SelectItem>
                 <SelectItem value="clinic">Clinic</SelectItem>
+                <SelectItem value="clinic">Government official</SelectItem>
                 <SelectItem value="ngo">NGO</SelectItem>
                 <SelectItem value="research">Research Institution</SelectItem>
                 <SelectItem value="other">Other</SelectItem>

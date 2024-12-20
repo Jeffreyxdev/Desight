@@ -108,13 +108,13 @@
     object-fit: cover;
     border-radius: 20px;
     margin-left: 6vw;
-    opacity: 60%;
+    opacity: 90%;
 }
   
   .right-arrow {
     position: absolute;
     top: 60%;
-    right: 32px;
+    right: 2px;
     font-size: 3rem;
     color: #353434cc;
     z-index: 10;
@@ -125,7 +125,7 @@
   .left-arrow {
     position: absolute;
     top: 60%;
-    left: 32px;
+    left: 1px;
     font-size: 3rem;
     color: #353434cc;
     z-index: 10;
@@ -246,16 +246,37 @@ border: 5px #2980b9 solid;
       display:none;
       
   }
+  .right-arrow {
+    position: absolute;
+    top: 60%;
+    right: -6px;
+    font-size: 3rem;
+    color: #353434cc;
+    z-index: 10;
+    cursor: pointer;
+    user-select: none;
+  }
+  
+  .left-arrow {
+    position: absolute;
+    top: 60%;
+    left: -15px;
+    font-size: 3rem;
+    color: #353434cc;
+    z-index: 10;
+    cursor:pointer ;
+    user-select: none;
+  }
   
   
   .image {
-    width: 84%;
-    height: 490px;
+    width: 90%;
+    height: 460px;
     object-fit: cover;
     
     border-radius: 20px;
     margin-left: 6vw;
-    opacity: 70%;
+   
     margin-top: 10vh;
  
 }

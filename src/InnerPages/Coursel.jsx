@@ -1,13 +1,16 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { FaArrowAltCircleRight, FaArrowAltCircleLeft } from 'react-icons/fa';
 import { useState } from 'react';
 import { SliderData } from './Slider'
 const Coursel = ({slides}) => {
+ 
     const [current, setCurrent] = useState(0);
+
     const length = slides.length;
-  
+    
     const nextSlide = () => {
       setCurrent(current === length - 1 ? 0 : current + 1); 
+      ;
     };
   
     const prevSlide = () => {
@@ -25,13 +28,14 @@ const Coursel = ({slides}) => {
             <FaArrowAltCircleLeft className='left-arrow' onClick={prevSlide} auto />
             <FaArrowAltCircleRight className='right-arrow' onClick={nextSlide} />
             {SliderData.map((slide, index) => {
+             
               return (
                 <div
                   className={index === current ? 'slide active' : 'slide'}
                   key={index}
                 >
                   {index === current && (
-                    <img src={slide.image} alt='travel image' className='image' />
+                    <img src={slide.image} alt='Desight' className='image' />
                   )}
                 </div>
               );
@@ -44,7 +48,9 @@ const Coursel = ({slides}) => {
           <li className='slider__paragraph paragraph-width'>
 
           </li>
-          <li className='slider__paragraph paragraph-width'>Extracurricular learning workshops that complement our curriculum.</li>
+          <li className='slider__paragraph paragraph-width'>Do you know
+            that 80% of elderly's suffer blindness due to eye diseases?
+          </li>
           <li className='slider__paragraph paragraph-width'>A safe environment that strives to promote respect, inclusion, and mutual support.</li>
           <li className='slider__paragraph paragraph-width'>English teachers who accompany students to overcome the challenges of learning a second language.</li>
         </ul>
