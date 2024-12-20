@@ -1,33 +1,45 @@
 import React from 'react';
+
 import styled from 'styled-components';
 
-const Loader = (props) => {
+const Loader = (load) => {
   return (
-    <StyledWrapper>
-      <div  id={props.load ? "loader" : "preloader-none"} />
+    <StyledWrapper  >
+      <div className='wrapper'>
+      <div  className='loader  '/>
+      </div>
     </StyledWrapper>
   );
 }
 
+const fadeOut =() =>{
+  const loader = document.querySelector('.wrapper');
+  loader.classList.add('fade', );
+  
+}
+window.addEventListener('load', fadeOut)
 const StyledWrapper = styled.div`
   .loader {
-    
-    position: relative;
-    position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 999999;
-  background-color: #0c0513;
-  }
-#preloader-none {
-  opacity: 0;
-}
+  width: 48px;
+  height: 48px;
+  margin: auto;
+  position: relative;
 
-#no-scroll {
-  overflow: hidden;
-  height: 100vh;
+ 
+  }
+  .wrapper{
+  position:fixed;
+  inset:0;
+  z-index:9999;
+  background-color: #212121;
+  display:grid;
+  place-items:center;
+  transition:opacity .25s, visibility 15s;
+  }
+.fade{
+opacity:0;
+visibility:hidden 5s;
+
 }
 
   .loader:before {
