@@ -2,7 +2,7 @@ import React from 'react';
 
 import styled from 'styled-components';
 
-const Loader = (load) => {
+const Loader = ({load}) => {
   return (
     <StyledWrapper  >
       <div className='wrapper'>
@@ -34,11 +34,11 @@ const StyledWrapper = styled.div`
   background-color: #212121;
   display:grid;
   place-items:center;
-  transition:opacity .25s, visibility 15s;
+  transition:opacity .25s, visibility 1s;
   }
 .fade{
 opacity:0;
-visibility:hidden 5s;
+visibility:hidden;
 
 }
 

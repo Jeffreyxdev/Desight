@@ -1,7 +1,11 @@
 export const SliderData = [
 {
     image:
-    '../src/assets/Desight (1).jpg'
+    '../src/assets/images (1).png'
+},
+{
+    image:
+    '../src/assets/images (1).jpg'
 },
 {
     image:
@@ -9,10 +13,14 @@ export const SliderData = [
 },
 {
     image:
-    '../src/assets/Desight (2).jpg'
+    '../src/assets/Desight(1).jpg'
 },
 {
     image:
-    ''
+    '../src/assets/Desight(2).jpg'
+},
+{
+    image:
+    '../src/assets/images (2).jpg'
 },
 ];
