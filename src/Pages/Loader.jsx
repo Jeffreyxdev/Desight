@@ -1,21 +1,34 @@
 import React from 'react';
 import styled from 'styled-components';
 
-const Loader = () => {
+const Loader = (props) => {
   return (
     <StyledWrapper>
-      <div className="loader" />
+      <div  id={props.load ? "loader" : "preloader-none"} />
     </StyledWrapper>
   );
 }
 
 const StyledWrapper = styled.div`
   .loader {
-    width: 48px;
-    height: 48px;
-    margin: auto;
+    
     position: relative;
+    position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 999999;
+  background-color: #0c0513;
   }
+#preloader-none {
+  opacity: 0;
+}
+
+#no-scroll {
+  overflow: hidden;
+  height: 100vh;
+}
 
   .loader:before {
     content: '';
