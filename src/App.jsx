@@ -11,18 +11,10 @@ import Programs from './Pages/Programs'
 import Enroll from './Pages/Enroll' 
 
 const App = () => {
-  const [load, upadateLoad] = useState(true);
-
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      upadateLoad(false);
-    }, 1200);
-
-    return () => clearTimeout(timer);
-  }, []);
+ 
   return (
     <div>
-      <Loader load={load} />
+    
       
       <Navbar/>
       <Routes>
