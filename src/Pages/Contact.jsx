@@ -1,6 +1,8 @@
 // src/ContactPage.js
 import React, { useState } from 'react';
-export const metadata = {
+import { Helmet } from 'react-helmet-async';
+
+ const Metadata = {
   title: "Let's Connect and Make Things Happen | Desight Foundation",
   description: "Need help or have questions? Our friendly team is here to provide exceptional service and support. Contact us for assistance. Let's connect and achieve together.",
   alternates: {
@@ -41,7 +43,14 @@ const Contact = () => {
   };
 
   return (
+  <>
+    <Helmet>
+      <title>Let's Connect and Make Things Happen | Desight Foundation</title>
+      <meta name="description" content="Need help or have questions? Our friendly team is here to provide exceptional service and support. Contact us for assistance. Let's connect and achieve together." />
+      <link rel="canonical" href="https://www.desightfoundation.com.ng/contact" />
+    </Helmet>
     <div style={styles.container}>
+      
       <h2 className='mt-20 item-center'>Contact Us</h2>
       {submitted && <p style={styles.successMessage}>Thank you for your message!</p>}
       {error && <p style={styles.errorMessage}>{error}</p>}
@@ -84,6 +93,7 @@ const Contact = () => {
         <button type="submit" style={styles.button}>Send Message</button>
       </form>
     </div>
+    </>
   );
 };
 
