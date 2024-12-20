@@ -23,7 +23,7 @@ const App = () => {
   return (
     <div>
       <Loader load={load} />
-      <div className="App" id={load ? "no-scroll" : "scroll"}>
+      
       <Navbar/>
       <Routes>
       
@@ -36,7 +36,7 @@ const App = () => {
         
         <Route path='/programs' element={<Programs/>}/>
        
-      </Routes> </div>
+      </Routes> 
     </div>
   )
 }
