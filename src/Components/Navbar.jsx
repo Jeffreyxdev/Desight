@@ -25,7 +25,7 @@ const Navbar = () => {
       <div className="nav-container flex justify-between w-[75%] mx-auto ">
         <div className="flex items-center">
         <Link to={'/'}>
-          <img src={Logo} className="h-[13vh] mt-[-2vh] mb-[-1vh] "  /></Link>
+          <img src={Logo} className="h-[13vh] mt-[-2vh] mb-[-1vh]  "  alt="Desight Logo" /></Link>
         </div>
      
          <ul className="hidden md:flex items-center space-x-5">
@@ -58,7 +58,7 @@ const Navbar = () => {
         <div className="nav-container pt-5 flex justify-between  nav-container h-3 mr-10 bg-white">
             <div className="mr-20">
               <Link to={'/'}>
-            <img src={Logo} className="h-[12vh] mt-[-3.5vh] mb-[-5vh] p-2 logo"  /></Link>
+            <img src={Logo} className="h-[12vh] mt-[-3.5vh] mb-[-5vh] p-2 logo" alt="Desight Logo"  /></Link>
             </div>
 
             {/* Mobile menu button (hamburger) */}
