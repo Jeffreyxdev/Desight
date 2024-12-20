@@ -2,7 +2,7 @@ import React from 'react';
 
 import styled from 'styled-components';
 
-const Loader = ({load}) => {
+const Loader = () => {
   return (
     <StyledWrapper  >
       <div className='wrapper'>
@@ -14,10 +14,11 @@ const Loader = ({load}) => {
 
 const fadeOut =() =>{
   const loader = document.querySelector('.wrapper');
-  loader.classList.add('fade', );
+  loader.classList.add('fade' );
   
 }
 window.addEventListener('load', fadeOut)
+
 const StyledWrapper = styled.div`
   .loader {
   width: 48px;

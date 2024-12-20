@@ -11,19 +11,11 @@ import Programs from './Pages/Programs'
 import Enroll from './Pages/Enroll' 
 
 const App = () => {
-  const [load, upadateLoad] = useState(true);
-
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      upadateLoad(false);
-    }, 1200);
-
-    return () => clearTimeout(timer);
-  }, []);
+   
   return (
     <div>
-      <Loader load={load} />
-      <div className="App" id={load ? "no-scroll" : "scroll"}>
+     
+    
       <Navbar/>
       <Routes>
       
@@ -36,7 +28,7 @@ const App = () => {
         
         <Route path='/programs' element={<Programs/>}/>
        
-      </Routes> </div>
+      </Routes> 
     </div>
   )
 }
