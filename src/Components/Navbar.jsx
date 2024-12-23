@@ -25,7 +25,7 @@ const Navbar = () => {
       <div className="nav-container flex justify-between w-[75%] mx-auto ">
         <div className="flex items-center">
         <Link to={'/'}>
-          <img src={Logo} className="h-[13vh] mt-[-2vh] mb-[-1vh]  "  alt="Desight Logo" /></Link>
+          <img src={Logo} className="h-[13vh] mt-[-2vh] mb-[-1vh] "  alt="Desight Logo" /></Link>
         </div>
      
          <ul className="hidden md:flex items-center space-x-5">
@@ -96,18 +96,19 @@ const Navbar = () => {
         animate="open"
         exit="closed"
         variants={sideVariants}
-        className="container md:hidden flex flex-col fixed bg-[#272727d0] text-white w-[55vw] ml-[35vw] mt-[10vh] h-[350px] items-end pr-[18vw] z-10 rounded-2xl pt-4">
+        className="container md:hidden flex flex-col fixed bg-[#272727d0] text-white w-[55vw] ml-[35vw] mt-[10vh] h-[370px] items-end pr-[18vw] z-10 rounded-2xl pt-4">
           <ul className="text-[20px] mr-[-25px] p-5" onClick={handleMobileMenuToggle}>
+          <motion.li variants={itemVariants} className="mb-6"><Link to='/'>Home</Link></motion.li>
             <motion.li variants={itemVariants} className="mb-6"><Link to='/goals'>Goals</Link></motion.li>
             <motion.li variants={itemVariants} className="mb-6"><Link to={'/about'}>About us</Link></motion.li>
             <motion.li variants={itemVariants} className="mb-6"><Link to={'/contact'}>Contact us</Link></motion.li>
-           <motion.li variants={itemVariants} className="mb-6">Outreachs</motion.li>
+           <motion.li variants={itemVariants} className="mb-6"><Link to='/programs'>Programs</Link></motion.li>
           </ul>
           <Link to={'/enroll'}>
           <motion.Button
             variants={itemVariants}
-            className="w-[150px] h-[48px] bg-gradient-to-r from-blue-600 to-blue-900 text-white rounded-xl text-[14px] mt-[-2vh] mr-[-2.8em]"
-          >
+            className="w-[150px] h-[48px] bg-gradient-to-r from-blue-600 to-blue-900 text-white rounded-xl text-[14px] mt-[-4vh] mr-[-2.8em]"
+            onClick={handleMobileMenuToggle}>
             Get Involved
           </motion.Button></Link>
          

@@ -1,7 +1,7 @@
-import React,{useState, useEffect} from 'react'
+import React from 'react'
 import { Route, Routes } from 'react-router-dom'
 import Home from './Pages/Home'
-import Loader from './Pages/Loader'
+
 import Navbar from './Components/Navbar'
 import Goals from './Pages/Goals'
 import About from './Pages/About'

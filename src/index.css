@@ -135,13 +135,13 @@
   
   .slide {
     opacity: 0;
-    transition-duration: 1s ease;
+    transition-duration: 1s ease ;
   }
   
   .slide.active {
     opacity: 1;
     transition-duration: 1s;
-    transform: scale(1.08);
+    transform: scale(1.08) ;
   }
 
   .paragraph-width{
@@ -226,6 +226,7 @@ border: 5px #2980b9 solid;
   .nav-full > div {
       width: 100%;
   }
+ 
   .btn{
     margin-top: 3vh;
    }
@@ -245,6 +246,12 @@ border: 5px #2980b9 solid;
   .nav-full{
       display:none;
       
+  }
+  .logo{
+    margin-left: -vw;
+    width: 120%;
+    
+    margin-top: -5vh;
   }
   .right-arrow {
     position: absolute;
@@ -279,6 +286,10 @@ border: 5px #2980b9 solid;
    
     margin-top: 10vh;
  
+}
+.eye{
+  margin-left: 19vw;
+  margin-top: -0.34in;
 }
 .slider__container{
   margin: 0;

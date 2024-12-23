@@ -3,9 +3,15 @@ import { Button } from '../Ui/Button'
 import { Link } from 'react-router-dom'
 import { SliderData } from '../InnerPages/Slider'
 import Coursel from '../InnerPages/Coursel'
+import { Helmet } from 'react-helmet-async';
 const Home = () => {
   return (
-    
+    <>
+    <Helmet>
+      <title> Desight Foundation</title>
+      <meta name="description" content="vist our site" />
+      <link rel="canonical" href="https://www.desightfoundation.com.ng/" />
+    </Helmet>
     <div className="relative min-h-[90vh] flex items-center justify-center overflow-hidden">
     <div className="absolute inset-0 -z-10">
       <div className="absolute top-20 right-20 w-72 h-72 bg-primary/30 rounded-full blur-3xl" />
@@ -25,6 +31,7 @@ const Home = () => {
       <Coursel slides={SliderData}/>
     </div>
   </div>
+  </>
   )
 }
 

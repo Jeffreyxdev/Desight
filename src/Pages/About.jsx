@@ -2,19 +2,25 @@ import React from 'react'
 import { Button } from '../Ui/Button'
 import { FaRegEye } from "react-icons/fa";
 import { Link } from 'react-router-dom'
+import { Helmet } from 'react-helmet-async';
 const About = () => {
   return (
-   
+   <>
+   <Helmet>
+         <title>Learn about us </title>
+         <meta name="description" content="" />
+         <link rel="canonical" href="https://www.desightfoundation.com.ng/about" />
+       </Helmet>
       <div className="about-container ">
       <h1 className="about-title mt-7">About Desight Foundation</h1>
       <div className='dash'></div>
       <p className="about-description">
-        At Desight Foundation, we are dedicated to improving the health and well-being of communities through innovative medical solutions and compassionate care. Our mission is to provide accessible healthcare services and support to those in need.
+        we are dedicated to improving the health and well-being of communities through innovative medical solutions and eye care. Our mission is to provide accessible healthcare services and support to those in need.Founded By senior DR Maureen Odimegwu Agabaenwere, she through vision for affordale health and eye care all over africa
       </p>
-     <h2 className="about-subtitle ">Our Vision <FaRegEye className='ml-[10vw] mt-[-5vh]' /></h2>
+     <h2 className="about-subtitle ">Our Vision <FaRegEye className='ml-[10vw] mt-[-5vh] eye' /></h2>
      <p className='dash1'/>
       <p className="about-description">
-        We envision a world where everyone has access to quality healthcare, regardless of their background or circumstances. We strive to empower individuals through education, resources, and support.
+        We envision a world where everyone has access to quality eye care, regardless of their background or circumstances. We strive to empower individuals through education, resources, and support.
       </p>
       <h2 className="about-subtitle">Our Values</h2>
       <ul className="about-values">
@@ -57,6 +63,7 @@ const About = () => {
       </p><Link to={'/enroll'}>
       <Button size='lg' className='gradient-bg text-white hover:opacity-90 transition-opacity'>Get involved</Button></Link>
     </div>
+    </>
   )
 }
 
