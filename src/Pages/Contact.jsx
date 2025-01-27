@@ -122,11 +122,12 @@ const styles = {
   },
   button: {
     padding: '10px',
-    borderRadius: '4px',
+    borderRadius: '10px',
     border: 'none',
     backgroundColor: '#2980b9',
     color: 'white',
     cursor: 'pointer',
+   
   },
   successMessage: {
     color: 'green',

@@ -298,7 +298,7 @@ border: 5px #2980b9 solid;
 }
 .paragraph-width{
   width: 70vw;
-  
+  margin-top: 2px;
   font-size: 1.3rem;
   list-style: circle;
   
@@ -322,17 +322,18 @@ border: 5px #2980b9 solid;
 .paragraph-blues{
   color: #002EC7;
   width: 113vw;
+  margin-top: 0.5px;
   
 }
 .slider__paragraph{
   
 float: left;
   font-size: 1.7rem;
-  
+  margin-top: 0.5px;
   margin:20px auto;
   font-weight: 400;
   font-style: italic;
-  
+  line-height: 30px;
   ;
 }
   

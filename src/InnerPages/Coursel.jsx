@@ -43,18 +43,24 @@ const Coursel = ({slides}) => {
           </section>
         </div>
         <h2 className='slider__title' style={{marginTop:'200px',}}>Why Africa?</h2>
-        <p className='slider__paragraph paragraph-blues'>Because Africa bears a disproportionate burden of visual impairment, with 43% of global blindness cases. Our focus on Africa addresses this disparity.</p>
+        <p className='slider__paragraph paragraph-blues'>Africa bears a disproportionately high burden of blindness and visual impairment globally. Over 26 million people in Africa are visually impaired, with around 6 million blind, and 80% of these cases are preventable or treatable.</p>
         <ul className='slider__list'>
-          <li className='slider__paragraph paragraph-width'>
-
+          <li className='slider__paragraph paragraph-width '>
+          Cataracts, glaucoma, trachoma, uncorrected refractive errors, and diabetic retinopathy are leading causes of blindness in the region.
           </li>
           <li className='slider__paragraph paragraph-width'>Do you know
             that 80% of elderly's suffer blindness due to eye diseases?
           </li>
-          <li className='slider__paragraph paragraph-width'>A safe environment that strives to promote respect, inclusion, and mutual support.</li>
-          <li className='slider__paragraph paragraph-width'>English teachers who accompany students to overcome the challenges of learning a second language.</li>
+          <li className='slider__paragraph paragraph-width'>Children with uncorrected vision issues face barriers in education, limiting their future opportunities.
+          </li>
+          <li className='slider__paragraph paragraph-width'>Africa has a severe shortage of ophthalmologists, optometrists, and trained eye care professionals. In many countries, the ratio of ophthalmologists to population is less than 1 per million people, compared to over 100 per million in developed countries.</li>
         </ul>
-  
+        <p className='slider__paragraph paragraph-blues'>Affordable Interventions with High Impact</p>
+        <ul className='slider__list'> 
+          <li className='slider__paragraph paragraph-width'>A simple cataract surgery can restore sight and transform lives for under $50 in many cases.</li>
+          <li className='slider__paragraph paragraph-width'>Basic corrective lenses can address uncorrected refractive errors for millions of people.</li>
+          <li className='slider__paragraph paragraph-width'>Treating trachoma with antibiotics or simple surgeries can save millions from blindness.</li>
+        </ul>
       
         
       </>
